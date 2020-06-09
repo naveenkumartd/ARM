@@ -7,6 +7,17 @@ trigger:
 - master
 
 pool:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Free Trial(bc61c3e5-a15e-4e51-9d97-450f52ec885b)'
+    subscriptionId: 'bc61c3e5-a15e-4e51-9d97-450f52ec885b'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'devops'
+    location: 'East US'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://github.com/naveenkumartd/ARM.git'
+    deploymentMode: 'Incremental'
   vmImage: 'ubuntu-latest'
 
 steps:
