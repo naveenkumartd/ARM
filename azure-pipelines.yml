@@ -18,7 +18,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-  - task: AzureResourceManagerTemplateDeployment@4
+  - task: AzureResourceManagerTemplateDeployment@3
     inputs:
       deploymentScope: 'Resource Group'
       azureResourceManagerConnection: 'Free Trial(3)(bc61c3e5-a15e-4e51-9d97-450f52ec885b)'
