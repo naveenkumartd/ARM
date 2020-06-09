@@ -24,6 +24,6 @@ steps:
       resourceGroupName: 'devops'
       location: 'East US'
       templateLocation: 'Linked artifact'
-      csmFile: 'https://github.com/naveenkumartd/ARM/blob/master/template.json'
+      csmFile: 'https://github.com/naveenkumartd/ARM/blob/master/'
       deploymentMode: 'Incremental'
 
