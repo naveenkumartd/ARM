@@ -13,13 +13,10 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-    displayName: 'Run a multi-line script'
 
-    - task: AzureResourceManagerTemplateDeployment@4
-    inputs:
+
+- task: AzureResourceManagerTemplateDeployment@4
+  inputs:
       deploymentScope: 'Resource Group'
       azureResourceManagerConnection: 'Free Trial(4)(bc61c3e5-a15e-4e51-9d97-450f52ec885b)'
       subscriptionId: 'bc61c3e5-a15e-4e51-9d97-450f52ec885b'
